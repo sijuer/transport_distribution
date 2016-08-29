@@ -1,0 +1,48 @@
+{
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org/" },
+    {
+      "type": "vcs",
+      "url": "https://sijuer@bitbucket.org/sijuer/transport_theme.git"
+    }
+  ],
+
+
+  "name": "tnt/transport-distribution",
+  "description" : "TYPO3 CMS Custom Distribution",
+  "license": "GPL-2.0+",
+  "require": {
+    "typo3/cms": "^7.6",
+    "typo3-ter/news": "^4.2.1",
+    "typo3-ter/powermail": "^3.3.0",
+    "typo3-ter/vhs":"2.4.0",
+    "typo3-ter/fluidpages":"3.6.0",
+    "typo3-ter/fluidbackend":"1.0.1",
+    "typo3-ter/flux":"7.4.0",       
+    "typo3-ter/realurl": "^2.0.14",
+    "typo3-ter/metaseo": "^2.0.0",
+    "typo3-ter/crawler": "^5.0.4",
+    "typo3-ter/ods-ajaxmailsubscription": "1.6.2", 
+    "typo3-ter/direct_mail": "5.1.0",
+    "typo3-ter/tt_address": "3.0.3",
+    "typo3-ter/jumpurl": "7.6.0",
+    "typo3-ter/fluidcontent": "^4.4.1",
+    "typo3-ter/t3adminer": "^7.0",
+    "tnt/transport-theme":"1.0.2"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "/"
+    }
+  },
+
+  "scripts": {
+    "post-install-cmd": [
+      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme"
+    ],
+    "post-update-cmd": [
+      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme"
+    ]
+  }
+}
