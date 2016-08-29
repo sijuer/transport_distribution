@@ -8,7 +8,7 @@
   ],
 
 
-  "name": "tnt/transport-distribution",
+  "name": "tnt-transport/transport-distribution",
   "description" : "TYPO3 CMS Custom Distribution",
   "license": "GPL-2.0+",
   "require": {
