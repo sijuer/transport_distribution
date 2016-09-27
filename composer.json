@@ -43,10 +43,12 @@
 
   "scripts": {
     "post-install-cmd": [
-      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme"
+      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
+      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery"
     ],
     "post-update-cmd": [
-      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme"
+      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
+      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery"
     ]
   }
 }
