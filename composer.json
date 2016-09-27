@@ -31,7 +31,7 @@
     "typo3-ter/jumpurl": "7.6.0",
     "typo3-ter/fluidcontent": "^4.4.1",
     "typo3-ter/t3adminer": "^7.0",
-    "pitsolutionstypo3/tnt_lightgallery":"1.0.1",
+    "pitsolutionstypo3/tnt_lightgallery":"1.0.2",
     "tnt/transport-theme":"1.0.3"
   },
   "extra": {
