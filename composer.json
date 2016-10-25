@@ -32,7 +32,7 @@
     "typo3-ter/fluidcontent": "^4.4.1",
     "typo3-ter/t3adminer": "^7.0",
     "pitsolutionstypo3/tnt_lightgallery":"1.0.2",
-    "tnt/transport-theme":"1.0.5"
+    "tnt/transport-theme":"1.0.6"
   },
   "extra": {
     "typo3/cms": {
@@ -44,11 +44,15 @@
   "scripts": {
     "post-install-cmd": [
       "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
-      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery"
+      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
+      "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
+      "mv -f typo3conf/ext/transport_theme/files/uploads uploads"
     ],
     "post-update-cmd": [
       "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
-      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery"
+      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
+      "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
+      "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
     ]
   }
 }
