@@ -52,7 +52,7 @@
       "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
       "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
       "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
-      "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
+      "mv -f typo3conf/ext/transport_theme/files/uploads uploads"
     ]
   }
 }
