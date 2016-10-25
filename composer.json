@@ -32,7 +32,7 @@
     "typo3-ter/fluidcontent": "^4.4.1",
     "typo3-ter/t3adminer": "^7.0",
     "pitsolutionstypo3/tnt_lightgallery":"1.0.2",
-    "tnt/transport-theme":"1.0.6"
+    "tnt/transport-theme":"1.0.7"
   },
   "extra": {
     "typo3/cms": {
@@ -46,13 +46,17 @@
       "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
       "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
       "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
-      "mv -f typo3conf/ext/transport_theme/files/uploads uploads"
+      "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
+      "mv -f typo3conf/ext/transport_theme/files/realurl_conf.php typo3conf",
+      "mv -f typo3conf/ext/transport_theme/files/.htaccess ."  
     ],
     "post-update-cmd": [
       "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
       "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
       "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
-      "mv -f typo3conf/ext/transport_theme/files/uploads uploads"
+      "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
+      "mv -f typo3conf/ext/transport_theme/files/realurl_conf.php typo3conf",
+      "mv -f typo3conf/ext/transport_theme/files/.htaccess ."
     ]
   }
 }
