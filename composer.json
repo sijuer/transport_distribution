@@ -43,16 +43,14 @@
 
   "scripts": {
     "post-install-cmd": [
-      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
-      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
+      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",      
       "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
       "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
       "mv -f typo3conf/ext/transport_theme/files/realurl_conf.php typo3conf",
       "mv -f typo3conf/ext/transport_theme/files/.htaccess ."  
     ],
     "post-update-cmd": [
-      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",
-      "mv -f vendor/pitsolutionstypo3/tnt_lightgallery typo3conf/ext/tnt_lightgallery",
+      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",      
       "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
       "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
       "mv -f typo3conf/ext/transport_theme/files/realurl_conf.php typo3conf",
