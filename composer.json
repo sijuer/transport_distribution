@@ -32,7 +32,7 @@
     "typo3-ter/fluidcontent": "^4.4.1",
     "typo3-ter/t3adminer": "^7.0",
     "pitsolutionstypo3/tnt_lightgallery":"1.0.3",
-    "tnt/transport-theme":"1.1.6"
+    "tnt/transport-theme":"1.1.7"
   },
   "extra": {
     "typo3/cms": {
@@ -42,16 +42,7 @@
   },
 
   "scripts": {
-    "post-install-cmd": [
-      "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",      
-      "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
-      "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
-      "mv -f typo3conf/ext/transport_theme/files/realurl_conf.php typo3conf",
-      "mv -f typo3conf/ext/transport_theme/files/.htaccess .",
-      "mv -f typo3conf/ext/transport_theme/files/apple-touch-icon.png .",
-      "mv -f typo3conf/ext/transport_theme/files/favicon.ico ."  
-    ],
-    "post-update-cmd": [
+    "post-create-project-cmd": [
       "mv -f vendor/tnt/transport-theme typo3conf/ext/transport_theme",      
       "mv -f typo3conf/ext/transport_theme/files/fileadmin fileadmin",
       "mv -f typo3conf/ext/transport_theme/files/uploads uploads",
